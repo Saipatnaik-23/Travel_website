@@ -1,0 +1,754 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Syne", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25em;
+}
+.beforeclick {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.items a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.15rem;
+  list-style: none;
+  margin: 0em 1em;
+}
+.items a:hover {
+  text-decoration: underline;
+}
+h2,
+.menu {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.header_sup {
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+}
+.about_sup {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: black;
+}
+.menu {
+  display: block;
+}
+.afterclick_content {
+  position: fixed;
+  width: 50%;
+  top: 0%;
+  right: 0%;
+  min-height: 100vh;
+  display: none;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+}
+.remove {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  display: block;
+  margin: 0.8em 0.85em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.list_m {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.afterclick_content .items_m {
+  list-style: none;
+  margin: 2em 0.5em;
+  font-size: 1.25rem;
+  text-align: start;
+}
+.afterclick_content .items_m i {
+  margin: 0 0.25em;
+  font-size: 1.5rem;
+}
+.items_a {
+  text-decoration: none;
+  color: black;
+}
+
+.items_a:hover {
+  text-decoration: underline;
+}
+.social_media {
+  position: absolute;
+  bottom: 5%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  margin-left: 25%;
+}
+.social_media i {
+  font-size: 1.5rem;
+  /* margin: 1em; */
+}
+.social_media i:hover {
+  box-shadow: 2px 2px 20px rgb(175, 175, 175);
+}
+@media screen and (max-width: 700px) {
+  /* .afterclick {
+    display: block;
+  } */
+  .beforeclick {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .afterclick_content {
+    width: 45%;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 968px) {
+  .afterclick_content {
+    width: 35%;
+  }
+}
+.main {
+  background-image: url("island-1285147_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* Set minimum height to cover the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-radius: 20px;
+  margin: 1em;
+  text-align: left;
+}
+h1,
+p {
+  color: rgb(255, 255, 255);
+}
+h1 {
+  font-size: 4rem;
+  margin: 1em 0.5em 0.25em 0.5em;
+}
+p {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0 1em;
+}
+.book {
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  padding: 0.5em 3em;
+  border-radius: 10px;
+  border: none;
+  margin: 3em 2em;
+}
+.book:hover {
+  background-color: rgb(225, 225, 225);
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+  p {
+    font-size: 3rem;
+  }
+  .book {
+    font-size: 1.25rem;
+    margin: 8em 2em;
+  }
+}
+.arrow {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  color: white;
+  margin-left: 2.5em;
+  margin-bottom: 2rem;
+}
+.booking_info h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.5em 0;
+  color: black;
+}
+.detail {
+  font-size: 1.2rem;
+  color: rgb(106, 106, 106);
+  text-align: center;
+  /* margin-bottom: 1.5em; */
+}
+.booking_option {
+  /* border-top:1px solid black ; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.option {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.option i {
+  border: 1px solid black;
+  color: black;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  padding: 0.5em;
+  background-color: rgb(255, 255, 255);
+}
+.title {
+  font-size: 1rem;
+  color: black;
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+.title_info {
+  font-size: 0.95rem;
+  /* display: none; */
+  color: rgb(106, 106, 106);
+}
+.tour_blog {
+  /* background-color: yellow; */
+  margin: 1em;
+}
+.tour_blog h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.img_slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  /* width: 350px; */
+  box-shadow: 0px 4px 10px black;
+  margin: 1.2em;
+  /* border: 1px solid black; */
+}
+
+.card img {
+  object-fit: cover;
+  object-position: center;
+  height: 70%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tour_info {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.tour_info button {
+  position: relative;
+  left: 80%;
+  bottom: 35%;
+  background-color: black;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.tour_info button i {
+  color: white;
+}
+.tour_title {
+  margin: 0.75em 0.25em;
+  font-size: 1.2rem;
+  /* font-weight: 500; */
+  color: black;
+}
+.tour_price {
+  font-size: 1.2rem;
+  margin: 0.75em 0.25em;
+  color: black;
+  font-weight: 600;
+}
+.more_option {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  /* right:0; */
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 1em 3em;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 1em;
+}
+.about_page {
+  /* background-color: yellow; */
+  margin: 4em 1em;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+}
+.top_left {
+  width: 30%;
+  /* background-color: yellow; */
+}
+.top_left h3 {
+  font-size: 2rem;
+  margin-top: 0.5em;
+}
+.top_right {
+  width: 60%;
+  /* background-color: green; */
+}
+.top_right p {
+  font-size: 1rem;
+  margin-top: 1em;
+  color: rgb(171, 171, 171);
+}
+.top_btn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  padding: 1em 3em;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 1em;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .top_left {
+    width: 50%;
+    margin: 0.5em;
+  }
+  .top_left h3 {
+    font-size: 3.5rem;
+    margin-top: 0.5em;
+  }
+  .top_right {
+    width: 50%;
+    margin: 0.5em;
+  }
+  .top_right p {
+    font-size: 1.2rem;
+    margin-top: 2em;
+    color: rgb(171, 171, 171);
+  }
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -4em;
+}
+.middle_left {
+  /* background-color: blue; */
+  margin: 1em;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px black;
+}
+.middle_right {
+  border-radius: 20px;
+  margin-bottom: 2em;
+}
+.middle_left img,
+.middle_right img {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.middle_left p,
+.middle_right p {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0.25em;
+  text-align: left;
+}
+.feature_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 0.5em 0.5em; */
+}
+.feature {
+  font-weight: 500;
+  background-color: rgb(236, 236, 236);
+  padding: 0.25em 1em;
+  border-radius: 20px;
+  margin: 1em;
+}
+.feature_box button {
+  background-color: black;
+  border: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 0.5em 0.5em;
+}
+.feature_box button i {
+  color: white;
+}
+.middle_right_box {
+  /* background-color: red; */
+  margin: 1em;
+}
+.middle_right {
+  box-shadow: 0px 4px 10px black;
+}
+@media screen and (min-width: 768px) {
+  .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: -4em;
+  }
+  .middle_left {
+    width: 50%;
+    /* background-color: blue; */
+    margin: 1em;
+  }
+  .middle_right_box {
+    width: 50%;
+    /* background-color: red; */
+    margin: 1em;
+  }
+  .middle_right {
+    margin-bottom: 2.5em;
+  }
+  .middle_left img {
+    height: 450px;
+  }
+  .middle_right img {
+    height: 160px;
+  }
+  .feature {
+    margin: 0.5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .middle_left img {
+    height: 530px;
+  }
+
+  .middle_right img {
+    height: 200px;
+  }
+  .top_left {
+    width: 45%;
+  }
+  .top_right {
+    width: 45%;
+  }
+  .top {
+    justify-content: space-around;
+  }
+  .middle {
+    justify-content: space-around;
+  }
+  .middle_left {
+    width: 45%;
+    margin: 1em 0.25em;
+  }
+
+  .middle_right_box {
+    width: 45%;
+    margin: 1em 0.25em;
+  }
+  .feature {
+    margin: 0.85em;
+  }
+  .feature button {
+    margin: 0.85em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* .middle_right{
+    width: 90%;
+  } */
+  .middle_right img {
+    height: 190px;
+  }
+  .middle_left {
+    width: 50%;
+  }
+  .middle_left img {
+    height: 520px;
+  }
+  .top_left {
+    width: 45%;
+  }
+
+  .top_right {
+    width: 45%;
+  }
+
+  .top {
+    justify-content: space-around;
+  }
+
+  .middle {
+    margin-bottom: -4em;
+    justify-content: space-around;
+  }
+
+  .middle_left {
+    width: 45%;
+    /* background-color: blue; */
+    margin: 0.5em 0.25em;
+  }
+
+  .middle_right_box {
+    width: 45%;
+    /* background-color: red; */
+    margin: 0.5em 0.25em;
+  }
+  .feature {
+    margin: 0.65em;
+    padding: 0.5em 1.5em;
+  }
+  .feature_box button {
+    height: 40px;
+    width: 40px;
+    margin: 0.85em;
+  }
+  .middle_left p,
+  .middle_right p {
+    margin: 0.25em 0.5em;
+  }
+}
+.booking_img {
+  background-image: url("sunset\ beach.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  /* Set minimum height to cover the viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0em 1em;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .booking_page h1 {
+    position: relative;
+    top: 20%;
+    font-size: 4rem;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 234);
+  margin: 1em;
+  border-radius: 20px;
+}
+.top {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em;
+}
+.top_title {
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+.about_us ul,
+.faq ul,
+.further_info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.about_us li,
+.faq li,
+.further_info li {
+  margin: 0.25em 0;
+}
+.about_us li a,
+.faq li a,
+.further_info li a {
+  text-decoration: none;
+  color: rgb(88, 88, 88);
+}
+.about_us li a:hover,
+.faq li a:hover,
+.further_info li a:hover {
+  text-decoration: underline;
+}
+.line {
+  margin: auto;
+  height: 1px;
+  width: 90%;
+  background-color: rgb(76, 76, 76);
+}
+.bottom {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom p {
+  font-size: 0.8rem;
+  color: black;
+}
+.links a {
+  margin: 0.25em;
+  font-size: 1.2em;
+}
+.links a :hover {
+  box-shadow: 2px 2px 20px rgb(175, 175, 175);
+}
+@media screen and (min-width: 1200px) {
+  .top {
+    justify-content: flex-end;
+  }
+  .about_us,
+  .faq,
+  .further_info {
+    margin: 0 2em;
+  }
+  .links a {
+    margin: 0.25em;
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .main {
+    min-width: 52vw;
+  }
+    .slide_btn
+    {
+      margin-bottom:0.5em;
+      margin-left: -1em;
+    }
+ h1 {
+   font-size: 3rem;
+ }
+
+ p {
+   font-size: 1.5rem;
+ }
+ .book{
+  margin: 3em 1em;
+ }
+  .tour_blog {
+    margin: 0.5em;
+  }
+  .top_left {
+    width: 30%;
+  }
+  .top_left h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5em;
+  }
+
+  .top_right {
+    width: 50%;
+  }
+  .about_sup {
+    font-size: 0.8rem;
+  }
+  .top_btn {
+    font-size: 0.8rem;
+    padding: 0.5em 1.5em;
+  }
+ 
+  .feature {
+    margin: 0.85em 0.25em;
+  }
+  .booking_page h1 {
+    font-size: 3rem;
+  }
+
+  .booking_page button {
+    top: 5%;
+  }
+  .top {
+    margin: 1em;
+  }
+  .top_title {
+    font-size: 1em;
+  }
+  .bottom p {
+    font-size: 0.7em;
+  }
+  .links a {
+    font-size: 1em;
+  }
+  .afterclick_content {
+    min-height: 100vh;
+    z-index: 1;
+  }
+    .afterclick_content .items_m {
+      list-style: none;
+      margin: 2em -0.5em;
+      font-size: 1rem;
+    }
+    .social_media 
+    {
+      bottom:10%;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .social_media i
+    {
+      font-size: 1.25rem;
+      margin: 0.25em;
+    }
+        .top_title {
+          font-size: 0.8rem;
+        }
+    
+        .about_us ul,
+        .faq ul,
+        .further_info ul {
+    
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+    
+        .about_us li,
+        .faq li,
+        .further_info li {
+          font-size: 0.8rem;
+        }
+  }
